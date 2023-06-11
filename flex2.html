@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col{
+            flex: 23%;
+            margin: 0 1px;
+            
+        }
+
+        img{
+            width:100%;
+            
+            
+        }
+
+        @media (max-width: 800px){
+            .col{
+            flex: 48%;
+            margin: 0 1px;
+            
+        }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="row">
+        <div class="col">
+            <img src="image/car1.jpg" />
+            <img src="image/car2.png" />
+            <img src="image/car3.jpg" />
+            <img src="image/car4.jpg" />
+            <img src="image/spring.jpg" />
+            <img src="image/winter.jfif" />
+            <img src="image/car1.jpg" />
+        </div>
+        <div class="col">
+            <img src="image/car3.jpg" />
+            <img src="image/car4.jpg" />
+            <img src="image/spring.jpg"/>
+            <img src="image/winter.jfif"/>
+            <img src="image/car1.jpg" />
+            <img src="image/car1.jpg" />
+            <img src="image/car2.png" />
+        </div>
+        <div class="col">
+            <img src="image/winter.jfif"/>
+            <img src="image/car1.jpg" />
+            <img src="image/car3.jpg" />
+            <img src="image/car1.jpg" />
+            <img src="image/car2.png" />
+            <img src="image/car4.jpg" />
+            <img src="image/spring.jpg"/>
+        </div>
+        <div class="col">
+            <img src="image/car2.png" />
+            <img src="image/car4.jpg" />
+            <img src="image/spring.jpg"/>
+            <img src="image/car3.jpg" />
+            <img src="image/car1.jpg" />
+            <img src="image/car2.png" />
+            <img src="image/winter.jfif"/>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

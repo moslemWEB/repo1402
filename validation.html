@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .error{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <form name="form1" action="#" onsubmit="return validate()">
+        <input type="text" name="name">
+        <input type="submit" > 
+    </form>
+    <p class="error">error</p>
+    <p id="a"></p>
+</div>
+
+<script>
+    function validate() {
+        var nameVal=document.forms["form1"]["name"].value;
+        
+        if (nameVal==null || nameVal=="") {
+            document.getElementsByClassName("error")[0].style.visibility="visible";
+            document.getElementsByClassName("error")[0].innerHTML="fill the text please!!";
+            return  false;
+        }
+        else{
+            return true;
+        }
+    }
+
+</script>
+
+<!-- <div class = "formData" >
+    <form name = "simpleForm" action = "#" onsubmit = "return validateForm()" >
+    Name: <input type = "text" name = "name">
+    <input type = "submit" >
+    </form>
+    <p class = "errorMessage top-arrow" > </p>
+    </div>
+    <script>
+    function validateForm() {
+    var nameVal = document.forms["simpleForm"]["name"].value;
+    if(nameVal == null || nameVal == "") {
+    document.getElementsByClassName( "errorMessage" )[0].style.visibility = "visible";
+    document.getElementsByClassName( "errorMessage" )[0].innerHTML = "Please Fill out this field";
+    return false;
+    } else {
+    return true;
+    }
+    }
+    </script> -->
+    
+</body>
+</html>
